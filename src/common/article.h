@@ -11,10 +11,12 @@ public:
     // Properties
     long m_id;
     QString m_name;
+    QString m_description;
+    QString m_comment;
     QString m_iconPath;
     long m_salesPrice;
     long m_stock;
-    double m_costPrice;
+    // TODO Transactions
     // TODO Categories
 };
 
