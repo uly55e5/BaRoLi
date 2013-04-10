@@ -6,3 +6,4 @@ install_manifest.txt
 build/
 CMakeLists.txt.user
 src/BaRoLi.pro.user
+build-BaRoLi-Desktop-Release
