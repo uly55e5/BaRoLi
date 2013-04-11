@@ -2,6 +2,7 @@
 #define ACCOUNT_TRANSFER_H
 
 class User;
+class Account;
 
 class QX_BAROLI_COMMON_DLL_EXPORT AccountTransfer
 {
@@ -13,7 +14,6 @@ public:
     virtual ~AccountTransfer();
 
     long m_id;
-    virtual ~AccountTransfer();
     QDateTime m_timestamp;
     QString m_description;
     user_ptr m_user;
