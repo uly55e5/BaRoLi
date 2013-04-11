@@ -11,14 +11,14 @@ TARGET = baroliService
 HEADERS += article.h \
     export.h \
     precompiled.h \
-    cash.h \
+    accounttransfer.h \
     account.h \
     category.h
 HEADERS += guest.h
 HEADERS += user.h
 
 SOURCES += article.cpp \
-    cash.cpp \
+    accounttransfer.cpp \
     account.cpp \
     category.cpp
 SOURCES += guest.cpp
