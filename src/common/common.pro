@@ -8,18 +8,24 @@ LIBS += -l"QxOrm"
 
 TARGET = baroliService
 
-HEADERS += article.h \
-    export.h \
-    precompiled.h \
-    accounttransfer.h \
-    account.h \
-    category.h
-HEADERS += guest.h
-HEADERS += user.h
+HEADERS += dataobjects/article.h \
+    dataobjects/export.h \
+    dataobjects/precompiled.h \
+    dataobjects/accounttransfer.h \
+    dataobjects/account.h \
+    dataobjects/category.h \
+    dataobjects/userrole.h \
+    dataobjects/articletransfer.h \
+    dataobjects/guesttransfer.h \
+    dataobjects/guest.h \
+    dataobjects/user.h
 
-SOURCES += article.cpp \
-    accounttransfer.cpp \
-    account.cpp \
-    category.cpp
-SOURCES += guest.cpp
-SOURCES += user.cpp
+SOURCES += dataobjects/article.cpp \
+    dataobjects/accounttransfer.cpp \
+    dataobjects/account.cpp \
+    dataobjects/category.cpp \
+    dataobjects/userrole.cpp \
+    dataobjects/articletransfer.cpp \
+    dataobjects/guesttransfer.cpp \
+    dataobjects/guest.cpp \
+    dataobjects/user.cpp

@@ -7,18 +7,18 @@ class Account;
 class QX_BAROLI_COMMON_DLL_EXPORT AccountTransfer
 {
 public:
-    typedef boost::shared_ptr<User> user_ptr;
-    typedef boost::shared_ptr<Account> account_ptr;
+    typedef boost::shared_ptr<User> UserP;
+    typedef boost::shared_ptr<Account> AccountP;
 
     AccountTransfer();
     virtual ~AccountTransfer();
 
-    long m_id;
-    QDateTime m_timestamp;
-    QString m_description;
-    user_ptr m_user;
-    long m_amount;
-    account_ptr m_account;
+    long _id;
+    QString _description;
+    long _amount;
+    AccountP _account;
+    UserP _user;
+    QDateTime _timestamp;
 
     long balance();
 };
