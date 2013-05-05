@@ -1,10 +1,18 @@
 #include <iostream>
 
-using namespace std;
+#include "../common/precompiled.h"
 
-int main()
+#include "../common/dao/barolidatabase.h"
+
+#include <QxMemLeak.h>
+
+int main(int argc, char * argv[])
 {
-    cout << "Hello World!" << endl;
+    QCoreApplication app(argc, argv);
+
+    BaRoLiDatabase::initSqlite();
+    BaRoLiDatabase::createTables();
+
     return 0;
 }
 

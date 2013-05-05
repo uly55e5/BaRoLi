@@ -10,8 +10,8 @@ public:
     typedef boost::shared_ptr<User> UserP;
     typedef boost::shared_ptr<Article> ArticleP;
 
-    ArticleTransfer();
-    virtual ~ArticleTransfer();
+    ArticleTransfer() { ; }
+    virtual ~ArticleTransfer() { ; }
 
     long _id;
     QString _description;

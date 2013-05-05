@@ -18,7 +18,9 @@ HEADERS += dataobjects/article.h \
     dataobjects/articletransfer.h \
     dataobjects/guesttransfer.h \
     dataobjects/guest.h \
-    dataobjects/user.h
+    dataobjects/user.h \
+    dao/barolidatabase.h \
+    dao/articlemanager.h
 
 SOURCES += dataobjects/article.cpp \
     dataobjects/accounttransfer.cpp \
@@ -28,4 +30,6 @@ SOURCES += dataobjects/article.cpp \
     dataobjects/articletransfer.cpp \
     dataobjects/guesttransfer.cpp \
     dataobjects/guest.cpp \
-    dataobjects/user.cpp
+    dataobjects/user.cpp \
+    dao/barolidatabase.cpp \
+    dao/articlemanager.cpp

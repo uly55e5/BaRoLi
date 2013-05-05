@@ -8,8 +8,8 @@ class QX_BAROLI_COMMON_DLL_EXPORT Category
 public:
     typedef boost::shared_ptr<Article> ArticleP;
     typedef qx::QxCollection<long,ArticleP> ArticlePs;
-    Category();
-    virtual ~Category();
+    Category() { ; }
+    virtual ~Category() { ; }
     // Propterties
     long _id;
     QString _name;

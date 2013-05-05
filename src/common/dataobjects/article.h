@@ -14,8 +14,8 @@ public:
     typedef std::vector<ArticleTransferP> ArticleTransferPs;
 
     // constructor and destructor
-    Article();
-    virtual ~Article();
+    Article() { ; }
+    virtual ~Article() { ; }
 
     // Properties
     long _id;
@@ -24,6 +24,7 @@ public:
     QString _comment;
     QString _iconPath;
     long _salePrice;
+    double _saleUnit;
     long _upperLimit;
     long _lowerLimit;
     CategoryPs _categories;
@@ -35,5 +36,8 @@ public:
 
 QX_REGISTER_HPP_BAROLI_COMMON(Article, qx::trait::no_base_class_defined, 0)
 
+typedef boost::shared_ptr<Article> ArticleP;
+typedef qx::QxCollection<long,ArticleP> ArticlePs;
+typedef boost::shared_ptr<ArticlePs> ArticlePsP;
 
 #endif // ARTICLE_H

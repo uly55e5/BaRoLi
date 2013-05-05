@@ -10,8 +10,8 @@ public:
     typedef boost::shared_ptr<Guest> GuestP;
     typedef boost::shared_ptr<User> UserP;
 
-    GuestTransfer();
-    virtual ~GuestTransfer();
+    GuestTransfer() { ; }
+    virtual ~GuestTransfer() { ; }
 
     long _id;
     QString _description;

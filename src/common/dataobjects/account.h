@@ -14,8 +14,8 @@ public:
     typedef std::vector<AccountTransferP> AccountTransferPs;
     typedef boost::shared_ptr<User> UserP;
 
-    Account();
-    virtual ~Account();
+    Account() { ; }
+    virtual ~Account() { ; }
 
     long _id;
     QString _name;

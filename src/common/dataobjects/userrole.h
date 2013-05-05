@@ -10,8 +10,8 @@ public:
     typedef boost::shared_ptr<User> UserP;
     typedef qx::QxCollection<long,UserP> UserPs;
 
-    UserRole();
-    virtual ~UserRole();
+    UserRole() { ; }
+    virtual ~UserRole() { ; }
 
     long _id;
     QString _name;

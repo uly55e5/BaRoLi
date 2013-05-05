@@ -10,8 +10,8 @@ public:
     typedef boost::shared_ptr<User> UserP;
     typedef boost::shared_ptr<Account> AccountP;
 
-    AccountTransfer();
-    virtual ~AccountTransfer();
+    AccountTransfer() { ; }
+    virtual ~AccountTransfer() { ; }
 
     long _id;
     QString _description;

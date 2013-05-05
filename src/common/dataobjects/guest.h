@@ -9,8 +9,8 @@ public:
     typedef boost::shared_ptr<GuestTransfer> GuestTransferP;
     typedef std::vector<GuestTransferP> GuestTransferPs;
 
-    Guest();
-    virtual ~Guest();
+    Guest() { ; }
+    virtual ~Guest() { ; }
     // Properties
     long _id;
     QString _name;

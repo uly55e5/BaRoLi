@@ -21,8 +21,8 @@ public:
     typedef std::vector<GuestTransferP> GuestTransferPs;
     typedef std::vector<AccountTransferP> AccountTransferPs;
     typedef std::vector<ArticleTransferP> ArticleTransferPs;
-    User();
-    virtual ~User();
+    User() { ; }
+    virtual ~User() { ; }
     // Properties
     long _id;
     QString _name;
