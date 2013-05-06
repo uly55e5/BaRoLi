@@ -9,8 +9,8 @@ LIBS += -l"QxOrm"
 TARGET = baroliService
 
 HEADERS += dataobjects/article.h \
-    dataobjects/export.h \
-    dataobjects/precompiled.h \
+    export.h \
+    precompiled.h \
     dataobjects/accounttransfer.h \
     dataobjects/account.h \
     dataobjects/category.h \

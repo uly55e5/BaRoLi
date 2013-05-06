@@ -28,15 +28,6 @@ BaRoLiDatabase::BaRoLiDatabase()
 
 void BaRoLiDatabase::initSqlite()
 {
-    static QMutex mutex;
-    static bool bInitDone = false;
-    if (bInitDone)
-        return;
-    QMutexLocker locker(& mutex);
-    if (bInitDone)
-        return;
-    bInitDone=true;
-
    qx::QxSqlDatabase::getSingleton()->setDriverName(s_driverName);
    qx::QxSqlDatabase::getSingleton()->setDatabaseName(s_databaseName);
    qx::QxSqlDatabase::getSingleton()->setHostName(s_hostname);

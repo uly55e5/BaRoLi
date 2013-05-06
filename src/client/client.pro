@@ -1,4 +1,7 @@
 include(../../../3rdparty/QxOrm/QxOrm.pri)
+QT       += core gui
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+
 TEMPLATE = app
 TARGET = baroliClient
 DEFINES += _BUILDING_BAROLI
@@ -7,10 +10,12 @@ LIBS += -l"QxOrm"
 LIBS += -L"../common"
 LIBS += -l"baroliService"
 
-HEADERS += ./gui/clientmainwindow.h
+HEADERS += gui/adminwidget.h \
+    gui/mainwindow.h
 
-SOURCES += client_main.cpp
+SOURCES += client_main.cpp \
+    gui/adminwidget.cpp \
+    gui/mainwindow.cpp
 
-SOURCES += ./gui/clientmainwindow.cpp
-
-FORMS += ./gui/clientmainwindow.ui
+FORMS += gui/adminwidget.ui \
+    gui/mainwindow.ui
